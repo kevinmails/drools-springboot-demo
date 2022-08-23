@@ -5,6 +5,7 @@ global com.imcbb.drools.domain.OrderDiscount orderDiscount;
 
 rule "Age based discount"
     when
+    //年龄判断
         OrderRequest(age < 20 || age > 50)
     then
         System.out.println("==========Adding 10% discount for Kids/ senior customer=============");
